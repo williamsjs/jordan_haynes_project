@@ -4,7 +4,7 @@ class MainController < ApplicationController
   end
 
   def sort
-    @ordered_phrase = params[:phrase].split("").sort.join
+    @ordered_phrase = Main.order_phrase(params)
   end
 
 end

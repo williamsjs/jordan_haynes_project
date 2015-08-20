@@ -1,1 +1,1 @@
-<h1><%= @ordered_phrase %></h1>
+<h1>Jordan Says: "<%= @ordered_phrase %>"</h1>
