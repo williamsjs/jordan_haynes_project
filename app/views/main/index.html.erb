@@ -1,9 +1,10 @@
 <div id="index">
-  <h1>The Jordan Haynes Talent</h1>
+  <h1 id="main-header">The Jordan Haynes Talent</h1>
   <div id="input">
-    <%= form_tag(main_sort_path) do %>
+    <%= form_tag(main_sort_path, remote: true) do %>
       <%= text_field_tag :phrase %>
       <%= submit_tag "submit" %>
     <% end %>
   </div>
+  <div id="output"></div>
 </div>

@@ -5,7 +5,6 @@ class MainController < ApplicationController
 
   def sort
     @ordered_phrase = params[:phrase].split("").sort.join
-    redirect_to root_path
   end
 
 end
