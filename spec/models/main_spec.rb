@@ -9,6 +9,11 @@ describe 'Main' do
       expect(Main.order_phrase(params)).to eq('cilooo')
     end
 
+    it "sorts letters with numbers and returns a phrase" do
+      params = {phrase: "coolio1"}
+      expect(Main.order_phrase(params)).to eq('You think you can fool me with numbers, boy! 1cilooo.')
+    end
+
   end
 
 end
