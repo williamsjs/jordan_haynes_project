@@ -7,6 +7,7 @@ describe MainController do
   describe 'get index' do
     it "brings up index page" do
       get :index
+      expect(response).to render_template("index")
     end
   end
 end
