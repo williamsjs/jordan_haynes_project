@@ -28,6 +28,11 @@
   background: asset_url('haynes.jpg') no-repeat;
   background-size: cover;
 
+  input[type="submit"] {
+    background: black;
+    color: white;
+  }
+
   #intro {
     display: inline;
     float: left;
